@@ -1,0 +1,53 @@
+<html>
+    <head>
+    <title>LOGIN FORM</title>
+    <link rel="stylesheet" href="logincss.css">
+
+    </head>
+<body>
+    <div id="user_div" class="main_div">
+    <form class="box" >
+        <h2>Student Login</h2>
+    <input type="email" placeholder="Username" id="user_name">
+    <input type="password" placeholder="Password" id="pass_word">
+    <button onclick="login()" >Login</button>
+
+    </input>
+    <h4><a href="reg.html" target="_blank">Don't have an account ?</a></h4>
+    <h4><a href="fp.html" target="_blank">Forgot Password ?</a></h4>
+    </form>
+    </div>
+  <!--<div id="login_div" class="logged_in">
+      <h3>Welcome broh!!</h3>
+      <p>
+          You have logged in ........
+      </p>
+      <button>Log Out</button>
+    </div>-->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAi1Xg-wgQnJIlBPE2-h17mLR7JFVlkBa0",
+    authDomain: "myfirstpr0ject.firebaseapp.com",
+    databaseURL: "https://myfirstpr0ject.firebaseio.com",
+    projectId: "myfirstpr0ject",
+    storageBucket: "myfirstpr0ject.appspot.com",
+    messagingSenderId: "663487298168",
+    appId: "1:663487298168:web:4d743854dfbb0721df4b8d",
+    measurementId: "G-TQGL3GRSH1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="index.js"></script>
+</body>
+
+</html>
